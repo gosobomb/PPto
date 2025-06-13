@@ -43,7 +43,7 @@ def fetch_batch(api_key, start_index, end_index, retries=5, delay=2):
                     'reg_date': item.get('REG_YMD', ''),
                     'rcv_date': item.get('RCV_YMD', ''),
                     'details': item.get('LGS_DTL_CN', ''),
-                    'storage': item.get('CSTD_PLC', ''),
+                    'storage_location': item.get('CSTD_PLC', ''),
                     'registrant_id': item.get('LOST_RGTR_ID', ''),
                     'item_name': item.get('LOST_NM', ''),
                     'item_type': item.get('LOST_KND', ''),
